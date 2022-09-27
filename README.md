@@ -1,2 +1,2 @@
-### Leetcode
-# made for algorithm and data structure learning purpose
+# Leetcode
+### made for algorithm and data structure learning purpose
