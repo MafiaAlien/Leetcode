@@ -33,12 +33,4 @@ class Solution:
             path.append(node.right.val)
             self._getPath(node.right, rest - node.right.val, res, path)
             path.pop()
-
-# Iteration
-class Solution1:
-    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
-        if not root:
-            return []
-        
-        que, temp = collections.deque()
         
