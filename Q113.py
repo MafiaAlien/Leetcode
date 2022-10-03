@@ -5,8 +5,6 @@
 #         self.left = left
 #         self.right = right
 # Recursive
-from matplotlib import collections
-
 
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
