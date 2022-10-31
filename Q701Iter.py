@@ -19,7 +19,7 @@ class Solution:
         # while开始迭代，当前指针如果指向空节点，则pre的left或者right 为cur
         # cur = TreeNode(val)
         # 判断条件依然根据值的大小来决定左还是右
-
+        # 先找到合适的位置：迭代法
         while cur:
             # 指针遍历，然后保存父节点做最后添加新节点用
             parent = cur 
@@ -36,6 +36,9 @@ class Solution:
             parent.left = node 
         # 返回根
         return root 
+<<<<<<< HEAD
 
 if __name__ == "__main__":
     pass
+=======
+>>>>>>> de8af90ad1d0c9fed3ed4a4437695407a46f9ca2
