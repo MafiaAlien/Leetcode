@@ -1,4 +1,7 @@
 # Definition for a binary tree node.
+from ast import main
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -33,3 +36,6 @@ class Solution:
             parent.left = node 
         # 返回根
         return root 
+
+if __name__ == "__main__":
+    pass
