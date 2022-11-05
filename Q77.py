@@ -1,0 +1,28 @@
+from typing import List
+class Solution:
+    def __init__(self):
+        self.path = [] # retore temp path
+        self.res = [] # restore results
+    
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        startIndex = 1 # 确认起始点，避免组合重复（组合是无关顺序的）
+        self.backtracking(n,k,startIndex)
+        return self.res # 返回结果集
+       
+    def backtracking(self, n:int, k:int, startIndex:int):
+        # end of recur, if length of path is equal to k, save the path in the res list 
+        if len(self.path) == k:
+            self.res.append(self.path[:])
+            return 
+        # 横向遍历1 -> 4查找组合，i在这里是startindex
+        for i in range(startIndex, n+1):
+            self.path.append(i) # 起始值添加进path
+            self.backtracking(n, k, i + 1) # 递归纵向查找组合
+            self.path.pop() # 回溯过程，将满足条件的path前一元素弹出继续查找其他元素
+
+        
+if __name__ == "__main__":
+    n = 4
+    k = 2
+    s = Solution()
+    print(s.combine(n,k))
