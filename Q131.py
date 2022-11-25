@@ -25,6 +25,6 @@ class Solution:
                 continue
 
 if __name__ =="__main__":
-    string = "aabddaeggeeda"
+    string = "aab"
     s = Solution()
     print(s.partition(string))
