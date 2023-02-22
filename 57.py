@@ -1,5 +1,4 @@
 from typing import List
-
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         if not intervals:
@@ -15,10 +14,6 @@ class Solution:
                 # current interval[i], the max one will be right num in res 
                 res[-1] = [last[0], max(last[1], intervals[i][1])]
             else:
+                # no interactoin part with previous interval, add to res directly
                 res.append(intervals[i])
         return res
-    
-if __name__ == "__main__":
-    intervals = [[1,3],[2,6],[8,10],[15,18]]
-    s = Solution()
-    print(s.merge(intervals=intervals))
