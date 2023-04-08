@@ -14,8 +14,11 @@ class Solution:
 
         return dp[-1]
 
-    
-if __name__ == '__main__':
+def main():
     n = 5
     s = Solution()
     print(s.numTrees(n))
+
+
+if __name__ == '__main__':
+    main()
