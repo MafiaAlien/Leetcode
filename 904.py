@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
         if not fruits:
